@@ -58,3 +58,29 @@ To evaluate the performance of the custom 2D CNN model, we benchmarked it agains
 | **ResNet**      | ~23.6                   | 97.4                    | 96.5              |
 
 > **Note**: Fine-tuning scripts for these benchmark models are not included in this repository as they are widely available and well-documented. Refer to the provided links for details on implementing and fine-tuning these models.
+
+## Dynamic Inference Module: 3D CNN and Hybrid 2D/3D CNN
+
+The Dynamic Inference Module applies video-based deep learning models to predict solvation states in polymer-solvent systems. This module includes:
+1. **3D CNN Base Model**: A lightweight spatiotemporal model with ~4.8M trainable parameters.
+2. **Hybrid 2D/3D CNN Model**: Combines 2D CNNs for spatial features and 3D CNNs for temporal features (~4.8M parameters).
+3. **Benchmark Models**:
+   - **R3D**: ResNet-3D with 33.2M trainable parameters.
+   - **C3D**: Convolutional 3D with 78.1M trainable parameters.
+
+### Results
+| Model           | Trainable Parameters (M) | Validation Accuracy (%) | Test Accuracy (%) |
+|-----------------|--------------------------|-------------------------|-------------------|
+| **3D CNN Base** | ~4.8                    | XX.X                   | XX.X              |
+| **Hybrid 2D/3D**| ~4.8                    | XX.X                   | XX.X              |
+| **R3D**         | ~33.2                   | XX.X                   | XX.X              |
+| **C3D**         | ~78.1                   | XX.X                   | XX.X              |
+
+> **Note**: Benchmark models (R3D and C3D) were fine-tuned using standard libraries. For implementation, refer to:
+> - [R3D Documentation](https://pytorch.org/vision/stable/models.html#video-classification)
+> - [C3D GitHub](https://github.com/DavideA/c3d-pytorch)
+
+### Steps to Run
+1. **Preprocess Videos**: Convert raw videos into normalized frames:
+   ```bash
+   python dynamic_inference/data_processing.py
