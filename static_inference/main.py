@@ -1,5 +1,5 @@
 import os
-from config.static_config import *
+from config.static_2dcnnbase_config.py import *
 from static_inference.data_loader import get_data_generators
 from static_inference.model import build_model
 from static_inference.train import train_model
