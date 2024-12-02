@@ -84,3 +84,33 @@ The Dynamic Inference Module applies video-based deep learning models to predict
 1. **Preprocess Videos**: Convert raw videos into normalized frames:
    ```bash
    python dynamic_inference/data_processing.py
+
+# Contextualisation Module: BLIP-22DFE
+
+The Contextualisation Module integrates the BLIP-2 model with 2D CNN features to enhance the interpretation of polymer-solvent solvation behaviors.
+
+## Instructions to Download and Use BLIP-2
+
+### Step 1: Install Dependencies
+Ensure you have the required Python packages installed. Use the following command:
+```bash
+pip install torch torchvision transformers numpy pandas tqdm nltk rouge-score
+
+from transformers import Blip2Processor, Blip2ForConditionalGeneration
+
+# Load BLIP-2 processor and model
+processor = Blip2Processor.from_pretrained(
+    "Salesforce/blip2-opt-2.7b",
+    revision="51572668da0eb669e01a189dc22abe6088589a24"
+)
+
+model = Blip2ForConditionalGeneration.from_pretrained(
+    "Salesforce/blip2-opt-2.7b",
+    revision="51572668da0eb669e01a189dc22abe6088589a24"
+)
+
+# Move model to GPU if available
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+
+print("BLIP-2 Model and Processor successfully loaded.")
