@@ -23,4 +23,5 @@ def train_hybrid_model():
         validation_data=val_generator,
         validation_steps=len(val_videos) // BATCH_SIZE,
         epochs=EPOCHS,
-        c
+        callbacks=[early_stopping, model_checkpoint]
+    )
