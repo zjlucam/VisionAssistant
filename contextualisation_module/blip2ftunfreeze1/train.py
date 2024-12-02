@@ -1,4 +1,4 @@
-from VisionAssistant.config.BLIP-2FE2D_config import *
+from VisionAssistant.config.blip2ftunfreeze1_config import *
 from VisionAssistant.models.dataset import ImageCaptioningDataset, custom_collate
 from VisionAssistant.models.model_utils import load_model_and_processor
 from VisionAssistant.models.training import train_epoch, validate_epoch
