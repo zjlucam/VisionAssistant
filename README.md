@@ -98,6 +98,8 @@ pip install torch torchvision transformers numpy pandas tqdm nltk rouge-score
 
 from transformers import Blip2Processor, Blip2ForConditionalGeneration
 
+# For the purposes of the study, a certain hash state of the BLIP-2 model was used to avoid a tokenisation error.
+
 # Load BLIP-2 processor and model
 processor = Blip2Processor.from_pretrained(
     "Salesforce/blip2-opt-2.7b",
