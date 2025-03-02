@@ -1,15 +1,6 @@
 # VisionAssistant
 Parameter Efficient Multi-Model Vision Assistant for Polymer Solvation Behaviour Inference
 
-x
-x
-x
-x
-x
-x
-xx
-x
-
 ## Benchmarking Against Pretrained 2D CNNs
 
 To evaluate the performance of the custom 2D CNN model, we benchmarked it against popular pretrained architectures: **DenseNet**, **VGG16**, **InceptionV3**, and **ResNet**. These models were fine-tuned on the same dataset under identical conditions.
@@ -71,10 +62,10 @@ The Dynamic Inference Module applies video-based deep learning models to predict
 ### Results
 | Model           | Trainable Parameters (M) | Validation Accuracy (%) | Test Accuracy (%) |
 |-----------------|--------------------------|-------------------------|-------------------|
-| **3D CNN Base** | ~4.8                    | XX.X                   | XX.X              |
-| **Hybrid 2D/3D**| ~4.8                    | XX.X                   | XX.X              |
-| **R3D**         | ~33.2                   | XX.X                   | XX.X              |
-| **C3D**         | ~78.1                   | XX.X                   | XX.X              |
+| **3D CNN Base** | ~4.8                     | 73.8                    | 71.2              |
+| **Hybrid 2D/3D**| ~4.8                     | 95.9                    | 93.7              |
+| **R3D**         | ~33.2                    | 95.6                    | 93.7              |
+| **C3D**         | ~78.1                    | 96.3                    | 94.9              |
 
 > **Note**: Benchmark models (R3D and C3D) were fine-tuned using standard libraries. For implementation, refer to:
 > - [R3D Documentation](https://pytorch.org/vision/stable/models.html#video-classification)
@@ -85,7 +76,7 @@ The Dynamic Inference Module applies video-based deep learning models to predict
    ```bash
    python dynamic_inference/data_processing.py
 
-# Contextualisation Module: BLIP-22DFE
+# Contextualisation Module: BLIP-2
 
 The Contextualisation Module integrates the BLIP-2 model with 2D CNN features to enhance the interpretation of polymer-solvent solvation behaviors.
 
