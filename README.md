@@ -86,11 +86,12 @@ Concatenation Strategy for Efficient Contextualization
 Instead of relying on BLIPv2 alone, the module concatenates features from a pre-trained 2D CNN with BLIPv2's vision-language representation.
 This allows for better contextual accuracy in describing solvation states while keeping the number of trainable parameters low compared to fully fine-tuning BLIPv2.
 
-
 ## Instructions to Download and Use BLIP-2 
 
-### Install Dependencies
-Ensure you have the required Python packages installed. Use the following command:
+## Install Dependencies
+
+Ensure you have the required Python packages installed. Run the following command:
+
 ```bash
 pip install torch torchvision transformers numpy pandas tqdm nltk rouge-score
 
@@ -98,7 +99,7 @@ from transformers import Blip2Processor, Blip2ForConditionalGeneration
 
 # For the purposes of the study, a certain hash state of the BLIP-2 model was used to avoid a tokenisation error.
 
-# Load BLIP-2 processor and model
+# Load BLIP-2 processor and model with a fixed hash state
 processor = Blip2Processor.from_pretrained(
     "Salesforce/blip2-opt-2.7b",
     revision="51572668da0eb669e01a189dc22abe6088589a24"
@@ -114,7 +115,6 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
 print("BLIP-2 Model and Processor successfully loaded.")
-'''
 
 ## Benchmarking Results for the Contextualisation Module
 
