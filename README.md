@@ -114,6 +114,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
 print("BLIP-2 Model and Processor successfully loaded.")
+'''
 
 ## Benchmarking Results for the Contextualisation Module
 
