@@ -34,11 +34,11 @@ To evaluate the performance of the custom 2D CNN model, we benchmarked it agains
 
 ### Fine-Tuning Methodology
 - **Dataset**: The same dataset used for training the custom 2D CNN was used for fine-tuning these models.
-- **Pretrained Weights**: All models were initialized with ImageNet pretrained weights.
+- **Pretrained Weights**: All models were initialised with ImageNet pretrained weights.
 - **Task-Specific Layers**:
   - The fully connected layers of each model were replaced with a task-specific classification head for the five solvation behavior classes: `dispersion`, `undissolved`, `dissolved`, `gel`, and `swelling`.
 - **Hyperparameters**:
-  - Optimizer: Adam
+  - Optimiser: Adam
   - Learning Rate: 0.001
   - Batch Size: 32
   - Epochs: 50
