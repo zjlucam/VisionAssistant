@@ -82,7 +82,7 @@ The Contextualisation Module integrates the BLIP-2 model with 2D CNN features to
 
 ## Instructions to Download and Use BLIP-2
 
-### Step 1: Install Dependencies
+### Install Dependencies
 Ensure you have the required Python packages installed. Use the following command:
 ```bash
 pip install torch torchvision transformers numpy pandas tqdm nltk rouge-score
