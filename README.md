@@ -76,11 +76,18 @@ The Dynamic Inference Module applies video-based deep learning models to predict
    ```bash
    python dynamic_inference/data_processing.py
 
-# Contextualisation Module: BLIP-2
+# Contextualisation Module: Vision-Language Integration with 2D CNN Features
 
 The Contextualisation Module integrates the BLIP-2 model with 2D CNN features to enhance the interpretation of polymer-solvent solvation behaviors.
 
-## Instructions to Download and Use BLIP-2
+The Contextualisation Module enhances the interpretability of polymer-solvent solvation behaviors by integrating BLIPv2 with extracted features from the 2D CNN model. This approach improves classification accuracy while maintaining a low number of trainable parameters.
+
+Concatenation Strategy for Efficient Contextualization
+Instead of relying on BLIPv2 alone, the module concatenates features from a pre-trained 2D CNN with BLIPv2's vision-language representation.
+This allows for better contextual accuracy in describing solvation states while keeping the number of trainable parameters low compared to fully fine-tuning BLIPv2.
+
+
+## Instructions to Download and Use BLIP-2 
 
 ### Install Dependencies
 Ensure you have the required Python packages installed. Use the following command:
