@@ -78,7 +78,7 @@ The Dynamic Inference Module applies video-based deep learning models to predict
 > - [C3D GitHub](https://github.com/DavideA/c3d-pytorch)
 
 ### Steps to Run
-1. **Preprocess Videos**: Convert raw videos into normalized frames:
+1. **Preprocess Videos**: Convert raw videos into normalised frames:
    ```bash
    python dynamic_inference/data_processing.py
 
@@ -88,7 +88,7 @@ The Contextualisation Module integrates the BLIP-2 model with 2D CNN features to
 
 The Contextualisation Module enhances the interpretability of polymer-solvent solvation behaviors by integrating BLIPv2 with extracted features from the 2D CNN model. This approach improves classification accuracy while maintaining a low number of trainable parameters.
 
-Concatenation Strategy for Efficient Contextualization
+Concatenation Strategy for Efficient Contextualisation
 Instead of relying on BLIPv2 alone, the module concatenates features from a pre-trained 2D CNN with BLIPv2's vision-language representation.
 This allows for better contextual accuracy in describing solvation states while keeping the number of trainable parameters low compared to fully fine-tuning BLIPv2.
 
@@ -125,7 +125,7 @@ print("BLIP-2 Model and Processor successfully loaded.")
 
 ## Benchmarking Results for the Contextualisation Module
 
-The table below summarizes the performance of BLIPv2 configurations, highlighting the impact of different fine-tuning strategies and the concatenation of 2D CNN features on BLEU-4 and ROUGE scores.
+The table below summarises the performance of BLIPv2 configurations, highlighting the impact of different fine-tuning strategies and the concatenation of 2D CNN features on BLEU-4 and ROUGE scores.
 
 | **Model Configuration** | **Trainable Parameters** | **BLEU-4 ↑** | **BLEU-4 Variance ↓** | **ROUGE ↑** | **ROUGE Variance ↓** |
 |-------------------------|-------------------------|--------------|----------------------|-------------|----------------------|
