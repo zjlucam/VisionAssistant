@@ -2,6 +2,8 @@
 
 This repository contains the codebase for dynamic and static inference using various deep learning models, including BLIP-2, 2D CNNs, 3D CNNs, and hybrid 2D-3D CNN architectures.
 
+The dataset (images, videos, image-text label pairs) can be found here: https://zenodo.org/records/14319147
+
 ## 📁 Repository Structure
 ```
 📦repo
