@@ -32,7 +32,7 @@ This repository contains the codebase for dynamic and static inference using var
  ┣ 📜train.py
  ┣ 📜requirements.txt
  ┗ 📜README.md
-
+```
 
 # VisionAssistant
 Parameter Efficient Multi-Model Vision Assistant for Polymer Solvation Behaviour Inference
