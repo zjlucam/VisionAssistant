@@ -149,4 +149,38 @@ The **BLIPv2 + 2D CNN Feature Concatenation (52M)** model **offers the best bala
 This repository contains the codebase for dynamic and static inference using various deep learning models, including BLIP-2, 2D CNNs, 3D CNNs, and hybrid 2D-3D CNN architectures.
 
 ## 📁 Repository Structure
-<pre><code> 📦 your-repo-name/ ├── 📁 config/ │ ├── blip22dfe_config.py │ ├── blip2ftunfreeze1_config.py │ ├── dynamic_2d3dhybridcnn_config.py │ ├── dynamic_3dcnnbase_config.py │ └── static_2dcnnbase_config.py │ ├── 📁 contextualisation_module/ │ └── main.py │ ├── 📁 dynamic_inference/ │ └── evaluate.py │ ├── 📁 static_inference/ │ └── main.py │ ├── 📁 blip22dfe/ │ └── main.py │ ├── 📁 blip2ftunfreeze1/ │ └── visualisation.py │ ├── 📁 2d3dhybridcnn/ │ └── evaluate.py │ ├── 📁 3dcnnbase/ │ └── evaluate.py │ ├── data_loader.py ├── evaluate.py ├── main.py ├── model.py ├── train.py ├── requirements.txt └── README.md </code></pre>
+- config/
+  - blip22dfe_config.py
+  - blip2ftunfreeze1_config.py
+  - dynamic_2d3dhybridcnn_config.py
+  - dynamic_3dcnnbase_config.py
+  - static_2dcnnbase_config.py
+
+- contextualisation_module/
+  - main.py
+
+- dynamic_inference/
+  - evaluate.py
+
+- static_inference/
+  - main.py
+
+- blip22dfe/
+  - main.py
+
+- blip2ftunfreeze1/
+  - visualisation.py
+
+- 2d3dhybridcnn/
+  - evaluate.py
+
+- 3dcnnbase/
+  - evaluate.py
+
+- data_loader.py  
+- evaluate.py  
+- main.py  
+- model.py  
+- train.py  
+- requirements.txt  
+- README.md
