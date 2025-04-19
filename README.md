@@ -169,8 +169,8 @@ The table below summarises the performance of BLIPv2 configurations, highlightin
 |-------------------------|-------------------------|--------------|----------------------|-------------|----------------------|
 | **BLIPv2 (Unfreeze FC1, FC2, and Final Norm Layer)** | **52M** | 0.564 | 0.07 | 0.83 | 0.057 |
 | **BLIPv2 + 2D CNN Feature Concatenation (Same Unfrozen Layers)** | **52M** | **0.855** | **0.04** | **0.937** | **0.03** |
-| **BLIPv2 (Unfreeze N-1 Layers)** | **80M** | 0.849 | 0.05 | 0.93 | 0.04 |
-| **BLIPv2 (Unfreeze N-2 Layers)** | **160M** | **0.868** | **0.03** | **0.94** | **0.02** |
+| **BLIPv2 (Unfreeze N-1 Layers)** | **80M** | 0.849 | 0.05 | 0.931 | 0.04 |
+| **BLIPv2 (Unfreeze N-2 Layers)** | **160M** | **0.868** | **0.03** | **0.943** | **0.02** |
 
 ### Key Insights
 - **2D CNN Feature Concatenation Improves Performance:**
