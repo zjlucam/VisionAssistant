@@ -111,9 +111,9 @@ The Dynamic Inference Module applies video-based deep learning models to predict
 | Model           | Trainable Parameters (M) | Validation Accuracy (%) | Test Accuracy (%) |
 |-----------------|--------------------------|-------------------------|-------------------|
 | **3D CNN Base** | ~4.8                     | 73.8                    | 71.2              |
-| **Hybrid 2D/3D**| ~4.8                     | 95.9                    | 93.7              |
-| **R3D**         | ~33.2                    | 95.6                    | 93.7              |
-| **C3D**         | ~78.1                    | 96.3                    | 94.9              |
+| **Hybrid 2D/3D**| ~4.8                     | 94.1                    | 93.7              |
+| **R3D**         | ~33.2                    | 93.2                    | 93.7              |
+| **C3D**         | ~78.1                    | 95.1                    | 94.9              |
 
 > **Note**: Benchmark models (R3D and C3D) were fine-tuned using standard libraries. For implementation, refer to:
 > - [R3D Documentation](https://pytorch.org/vision/stable/models.html#video-classification)
