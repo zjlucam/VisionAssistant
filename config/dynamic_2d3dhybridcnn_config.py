@@ -10,15 +10,18 @@ test_dir = os.path.join(base_data_dir, 'test')
 classes = ['Dissolved', 'Undissolved', 'Gel', 'Swelling', 'Dispersion']
 
 # Model Parameters
-FRAME_SIZE = (224, 224)      # Dimensions of each video frame
-FRAMES_PER_VIDEO = 15        # Number of frames per video
-BATCH_SIZE = 16              # Batch size
-EPOCHS = 150                 # Number of epochs
-LEARNING_RATE = 0.001        # Learning rate
+FRAME_SIZE = (224, 224)
+FRAMES_PER_VIDEO = 15   
+BATCH_SIZE = 16             
+EPOCHS = 150                 
+LEARNING_RATE = 0.001        
 
 # Checkpoints
 checkpoint_path = './checkpoints/dynamic_2d3dhybridcnn.keras'
 weights_checkpoint_path = './checkpoints/dynamic_2d3dhybridcnn.weights.h5'
 
 # Parallel Processing Parameters
-MAX_WORKERS = 8  # Maximum threads for data processing
+MAX_WORKERS = 8  
+
+# Reproducibility
+SEED = 17
