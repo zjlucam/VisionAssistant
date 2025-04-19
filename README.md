@@ -43,8 +43,6 @@ Parameter Efficient Multi-Model Vision Assistant for Polymer Solvation Behaviour
 - **Dynamic Inference Module**: Utilises a **3D CNN and Hybrid 2D/3D CNN** for video-based solvation state prediction.  
 - **Contextualisation Module**: Integrates **BLIPv2 with 2D CNN features** to provide interpretable descriptions of solvation behaviours.  
 
-The dataset used from the abovementioned modules can be downloaded from: https://zenodo.org/records/14319147
-
 ## Benchmarking Against Pretrained 2D CNNs
 
 To evaluate the performance of the custom 2D CNN model, we benchmarked it against popular pretrained architectures: **DenseNet**, **VGG16**, **InceptionV3**, and **ResNet**. These models were fine-tuned on the same dataset under identical conditions.
