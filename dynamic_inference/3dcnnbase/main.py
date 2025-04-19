@@ -1,6 +1,9 @@
+import random
+import numpy as np
+import tensorflow as tf
 from dynamic_inference.3dcnnbase.train import main as train_main
 from dynamic_inference.3dcnnbase.data_processing import save_video_frames_parallel
-from config.dynamic_3dcnnbase_config import base_data_dir, classes
+from config.dynamic_3dcnnbase_config import base_data_dir, classes, SEED
 
 def preprocess_videos():
     save_video_frames_parallel(
@@ -13,5 +16,8 @@ def preprocess_videos():
     )
 
 if __name__ == "__main__":
+    tf.keras.utils.set_random_seed(SEED)
+    tf.config.experimental.enable_op_determinism()
+
     preprocess_videos()
     train_main()
