@@ -1,4 +1,4 @@
-# 🧠 Vision Assistant Model Repository
+# 📷 Vision Assistant Model Repository
 
 This repository contains the codebase for dynamic and static inference using various deep learning models, including BLIP-2, 2D CNNs, 3D CNNs, and hybrid 2D-3D CNN architectures.
 
