@@ -18,9 +18,9 @@ def main():
 
     # Define callbacks
     callbacks = [
-        EarlyStopping(monitor='val_loss', patience=30, restore_best_weights=True, verbose=1),
+        EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True, verbose=1),
         ModelCheckpoint(checkpoint_path, monitor='val_loss', save_best_only=True, verbose=1),
-        ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=18, min_lr=1e-6, verbose=1),
+        ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=5, min_lr=1e-6, verbose=1),
     ]
 
     # Train the model
