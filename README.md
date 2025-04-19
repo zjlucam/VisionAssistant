@@ -76,8 +76,14 @@ To evaluate the performance of the custom 2D CNN model, we benchmarked it agains
 - **Hyperparameters**:
   - Optimiser: Adam
   - Learning Rate: 0.001
+  - Learning Rate Scheduler: ReduceLROnPlateau (monitors validation loss and reduces the learning rate when it plateaus)
+    - Factor: 0.1 (reduces LR by a factor of 10)
+    - Patience: 5 epochs (waits 5 epochs with no improvement before reducing LR)
+    - Minimum LR: 1e-6
   - Batch Size: 32
   - Epochs: 50
+  - Early Stopping: Enabled
+    - Patience: 10 epochs (training stops if validation loss doesn’t improve for 10 consecutive epochs)
 - **Frameworks Used**:
   - TensorFlow/Keras: [Installation Guide](https://www.tensorflow.org/install)
 
