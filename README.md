@@ -113,10 +113,10 @@ The Dynamic Inference Module applies video-based deep learning models to predict
 > - [R3D Documentation](https://pytorch.org/vision/stable/models.html#video-classification)
 > - [C3D GitHub](https://github.com/DavideA/c3d-pytorch)
 
-### Steps to Run
-1. **Preprocess Videos**: Convert raw videos into normalised frames:
+### Note: To reduce GPU RAM requirements: Preprocess videos by converting raw videos into normalised frames:
    ```bash
    python dynamic_inference/data_processing.py
+```
 
 # Contextualisation Module: Vision-Language Integration with 2D CNN Features
 
