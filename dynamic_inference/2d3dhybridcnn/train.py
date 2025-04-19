@@ -1,13 +1,19 @@
+import random
+import numpy as np
+import tensorflow as tf
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from dynamic_inference.2d3dhybridcnn.data_loader import memory_data_generator, load_and_split_frames
 from dynamic_inference.2d3dhybridcnn.model import build_hybrid_2d3d_cnn
 from config.dynamic_2d3dhybridcnn_config import *
 
 def train_hybrid_model():
+    tf.keras.utils.set_random_seed(SEED)
+    tf.config.experimental.enable_op_determinism()
+
     # Load and split data
     train_videos, train_labels, val_videos, val_labels, _, _ = load_and_split_frames(data_dir, classes)
-    train_generator = memory_data_generator(train_videos, train_labels, BATCH_SIZE, len(classes))
-    val_generator = memory_data_generator(val_videos, val_labels, BATCH_SIZE, len(classes))
+    train_generator = memory_data_generator(train_videos, train_labels, BATCH_SIZE, len(classes), seed=SEED)
+    val_generator = memory_data_generator(val_videos, val_labels, BATCH_SIZE, len(classes), seed=SEED)
 
     # Build the model
     model = build_hybrid_2d3d_cnn(FRAME_SIZE, FRAMES_PER_VIDEO, len(classes))
