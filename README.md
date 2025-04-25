@@ -14,19 +14,40 @@ The dataset (images, videos, image-text label pairs) can be found here: https://
  ┃ ┣ 📜dynamic_3dcnnbase_config.py
  ┃ ┗ 📜static_2dcnnbase_config.py
  ┣ 📂contextualisation_module
- ┃ ┗ 📜main.py
+ ┃ ┣ 📂blip22dfe
+ ┃ ┃ ┣ 📜blip2_with_cnn.py
+ ┃ ┃ ┣ 📜image_captioning_dataset.py
+ ┃ ┃ ┣ 📜main.py
+ ┃ ┃ ┣ 📜test_evaluation.py
+ ┃ ┃ ┣ 📜train_loop.py
+ ┃ ┃ ┗ 📜validate_loop.py
+ ┃ ┗ 📂blip2ftunfreeze1
+ ┃ ┃ ┣ 📜dataset.py
+ ┃ ┃ ┣ 📜evaluation.py
+ ┃ ┃ ┣ 📜model_utils.py
+ ┃ ┃ ┣ 📜train.py
+ ┃ ┃ ┣ 📜training.py
+ ┃ ┃ ┗ 📜visualisation.py
  ┣ 📂dynamic_inference
- ┃ ┗ 📜evaluate.py
+ ┃ ┣ 📂2d3dhybridcnn
+ ┃ ┃ ┣ 📜data_loader.py
+ ┃ ┃ ┣ 📜data_processing.py
+ ┃ ┃ ┣ 📜evaluate.py
+ ┃ ┃ ┣ 📜model.py
+ ┃ ┃ ┗ 📜train.py
+ ┃ ┗ 📂3dcnnbase
+ ┃ ┃ ┣ 📜data_loader.py
+ ┃ ┃ ┣ 📜data_processing.py
+ ┃ ┃ ┣ 📜evaluate.py
+ ┃ ┃ ┣ 📜main.py
+ ┃ ┃ ┣ 📜model.py
+ ┃ ┃ ┗ 📜train.py
  ┣ 📂static_inference
- ┃ ┗ 📜main.py
- ┣ 📂blip22dfe
- ┃ ┗ 📜main.py
- ┣ 📂blip2ftunfreeze1
- ┃ ┗ 📜visualisation.py
- ┣ 📂2d3dhybridcnn
- ┃ ┗ 📜evaluate.py
- ┣ 📂3dcnnbase
- ┃ ┗ 📜evaluate.py
+ ┃ ┣ 📜data_loader.py
+ ┃ ┣ 📜evaluate.py
+ ┃ ┣ 📜main.py
+ ┃ ┣ 📜model.py
+ ┃ ┗ 📜train.py
  ┣ 📜data_loader.py
  ┣ 📜evaluate.py
  ┣ 📜main.py
