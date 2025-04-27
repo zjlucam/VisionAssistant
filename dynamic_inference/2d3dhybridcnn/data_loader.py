@@ -4,10 +4,6 @@ from sklearn.model_selection import train_test_split
 from dynamic_inference.2d3dhybridcnn.data_processing import load_class_files
 
 def load_and_split_frames(data_dir, classes, test_size=0.2, random_state=42, max_workers=4):
-    """
-    Load preprocessed frames (saved as .npy files) for each class in parallel
-    and split into train, validation, and test sets.
-    """
     videos = []
     labels = []
 
@@ -33,9 +29,6 @@ def load_and_split_frames(data_dir, classes, test_size=0.2, random_state=42, max
     return train_videos, train_labels, val_videos, val_labels, test_videos, test_labels
 
 def memory_data_generator(videos, labels, batch_size, num_classes):
-    """
-    Create a data generator for in-memory training.
-    """
     num_samples = videos.shape[0]
     indices = np.arange(num_samples)
     while True:
