@@ -5,9 +5,6 @@ from tensorflow.keras.layers import (
 )
 
 def build_hybrid_2d3d_cnn(frame_shape, num_frames, num_classes):
-    """
-    Builds a Hybrid 2D/3D CNN model.
-    """
     # 2D CNN for spatial features
     input_2d = Input(shape=frame_shape)
     x = Conv2D(32, (3, 3), activation='relu', padding='same')(input_2d)
