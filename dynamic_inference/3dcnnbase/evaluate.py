@@ -6,9 +6,6 @@ from dynamic_inference.3dcnnbase.data_loader import memory_data_generator, load_
 from config.dynamic_3dcnnbase_config import *
 
 def plot_confusion_matrix(generator, model, classes):
-    """
-    Plot a confusion matrix for predictions from a model using a data generator.
-    """
     # Initialize lists for true and predicted labels
     y_true = []
     y_pred = []
@@ -32,10 +29,6 @@ def plot_confusion_matrix(generator, model, classes):
     plt.show()
 
 def evaluate_model():
-    """
-    Load the trained model, evaluate its performance on validation data,
-    and plot the confusion matrix.
-    """
     # Load preprocessed validation data
     print("Loading validation data...")
     val_videos, val_labels = load_preprocessed_frames(val_dir, classes)
