@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 def process_video(video_path, save_path, frame_size=(224, 224), num_frames=15):
     if os.path.exists(save_path):
-        return  # Skip if already processed
+        return
 
     frames = []
     cap = cv2.VideoCapture(video_path)
