@@ -6,7 +6,7 @@
 ![Data License](https://img.shields.io/badge/Data%20License-See%20Zenodo%20record-F4C2C2)
 ![Python](https://img.shields.io/badge/Python-3.8%E2%80%933.11-FFD580)
 
-This repository contains the codebase (framework) for dynamic and static inference using various deep learning models, including BLIP-2, 2D CNNs, 3D CNNs, and hybrid 2D-3D CNN architectures.
+This repository contains the reference implementation of a vision-based framework for inferring polymer solvation behaviour from static images and dynamic video data, using a combination of 2D CNNs, 3D CNNs, hybrid 2D–3D architectures, and vision–language models (BLIP-2).
 
 The paper summarising the methodology and framework can be found here: https://www.nature.com/articles/s41524-025-01658-7
 
