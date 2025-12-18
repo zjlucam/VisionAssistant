@@ -1,7 +1,7 @@
 # 📷 Vision Assistant Model Repository
 
 ![Paper](https://img.shields.io/badge/npj%20Computational%20Materials-2025-4C78A8)
-![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs41524--025--01658--7-4C78A8)
+[![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs41524--025--01658--7-4C78A8)](https://doi.org/10.1038/s41524-025-01658-7)
 ![Code License](https://img.shields.io/badge/Code%20License-MIT-9FE2BF)
 ![Data License](https://img.shields.io/badge/Data%20License-See%20Zenodo%20record-F4C2C2)
 ![Python](https://img.shields.io/badge/Python-3.8%E2%80%933.11-FFD580)
