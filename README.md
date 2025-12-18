@@ -1,4 +1,4 @@
-# 📷 Vision Assistant Model Repository
+# 📷 Vision Assistant Model
 
 ![Paper](https://img.shields.io/badge/npj%20Computational%20Materials-2025-4C78A8)
 [![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs41524--025--01658--7-4C78A8)](https://doi.org/10.1038/s41524-025-01658-7)
