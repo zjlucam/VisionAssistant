@@ -12,6 +12,10 @@ The paper summarising the methodology and framework can be found here: https://w
 
 The dataset (images, videos, image-text label pairs) can be found here: https://zenodo.org/records/14319147
 
+<p align="center">
+  <img src="figures/Fig1Updated.png" width="700">
+</p>
+
 ## 📁 Repository Structure
 ```
 📦repo
